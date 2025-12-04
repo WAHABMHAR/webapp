@@ -24,6 +24,7 @@
     "multer-storage-cloudinary": "^4.0.0",
     "nodemailer": "^7.0.5",
     "nodemon": "^3.1.10",
+    "project-one": "file:..",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
