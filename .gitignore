@@ -1,0 +1,256 @@
+# ============================================
+# ROOT LEVEL .gitignore
+# Covers: admin, backend, mobile projects
+# ============================================
+
+# ============================================
+# Environment Variables & Secrets
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
+
+# ============================================
+# Dependencies (Node.js)
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+
+# ============================================
+# Build Outputs & Generated Files
+# ============================================
+# Admin (Vite)
+admin/dist/
+admin/.vite/
+admin/build/
+admin/*.local
+
+# Backend (TypeScript compiled output)
+backend/dist/
+backend/build/
+backend/*.js.map
+
+# Mobile (Expo/React Native)
+mobile/dist/
+mobile/web-build/
+mobile/.expo/
+mobile/expo-env.d.ts
+mobile/app-example/
+mobile/.metro-health-check*
+
+# ============================================
+# TypeScript
+# ============================================
+*.tsbuildinfo
+*.log
+
+# ============================================
+# IDE & Editor Files
+# ============================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# Operating System Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# Logs & Temporary Files
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ============================================
+# Testing & Coverage
+# ============================================
+coverage/
+*.lcov
+.nyc_output/
+.coverage/
+.coverage.*
+htmlcov/
+.pytest_cache/
+*.cover
+.hypothesis/
+
+# ============================================
+# Mobile/React Native Specific
+# ============================================
+# Expo
+.expo/
+.expo-shared/
+expo-env.d.ts
+
+# Native builds (generated)
+mobile/ios/
+mobile/android/
+mobile/.gradle/
+mobile/local.properties
+mobile/.idea/
+
+# Native keys & certificates
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+*.keystore
+*.mobileprovision
+
+# Metro bundler
+.metro-health-check*
+metro.config.js.bak
+
+# ============================================
+# Backend Specific
+# ============================================
+# Uploads & user-generated content
+backend/uploads/
+backend/public/uploads/
+backend/temp/
+backend/tmp/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Cloudinary temp files
+.cloudinary/
+
+# ============================================
+# Frontend/Admin Specific
+# ============================================
+# Vite
+admin/.vite/
+admin/vite.config.js.timestamp-*
+admin/vite.config.ts.timestamp-*
+
+# Cache
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# ============================================
+# Package Manager Locks (optional - uncomment if you want to ignore)
+# ============================================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
+# Misc
+# ============================================
+*.pem
+*.p7b
+*.p7c
+*.p12
+*.pfx
+*.key
+*.crt
+*.cer
+*.der
+*.csr
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# Local configuration
+local.json
+config.local.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
