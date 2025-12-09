@@ -3,8 +3,8 @@ import nodemailer from "nodemailer";
 export const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: process.env.MY_EMAIL || "wahabmhar@gmail.com",
-        pass: process.env.MY_PASSWORD || "rjnn ydqe qkop yxxo",
+        user: process.env.MY_EMAIL,
+        pass: process.env.MY_PASSWORD,
     },
 });
 
@@ -13,7 +13,8 @@ export const verficationEmail = async (email: string, name: string, token: strin
         user: process.env.MY_EMAIL,
         pass: process.env.MY_PASSWORD,
     });
-    const url = `${process.env.BASE_URL}:${process.env.LOCAL_PORT}/api/users/verify/${token}`;
+    const baseUrl = process.env.FRONTEND_URL || process.env.BASE_URL || "http://localhost:3000";
+    const url = `${baseUrl}/api/users/verify/${token}`;
     const mailOptions = {
         from: process.env.MY_EMAIL,
         to: email,
